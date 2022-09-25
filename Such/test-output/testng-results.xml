@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-25T14:45:28 IST" name="Default suite" finished-at="2022-09-25T14:46:29 IST" duration-ms="60839">
+    <groups>
+    </groups>
+    <test started-at="2022-09-25T14:45:28 IST" name="Default test" finished-at="2022-09-25T14:46:29 IST" duration-ms="60839">
+      <class name="com.org.testCase.SignInTestcase">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:45:28 IST" name="setUpReport" finished-at="2022-09-25T14:45:28 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:45:28 IST" name="launchBrowser" finished-at="2022-09-25T14:45:43 IST" duration-ms="14634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validatelogin()[pri:1, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:45:43 IST" name="validatelogin" finished-at="2022-09-25T14:45:48 IST" duration-ms="5151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatelogin -->
+        <test-method signature="validateUsereId(java.lang.String,java.lang.String)[pri:2, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:45:49 IST" name="validateUsereId" data-provider="validateDataProvider" finished-at="2022-09-25T14:45:53 IST" duration-ms="4394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUsereId -->
+        <test-method signature="validateUsereId(java.lang.String,java.lang.String)[pri:2, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:45:53 IST" name="validateUsereId" data-provider="validateDataProvider" finished-at="2022-09-25T14:45:58 IST" duration-ms="4339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSC-80]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUsereId -->
+        <test-method signature="validatedashboardTitle()[pri:2, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:45:58 IST" name="validatedashboardTitle" finished-at="2022-09-25T14:45:58 IST" duration-ms="311" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [ashboard] but found [Dashboard]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [ashboard] but found [Dashboard]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.org.testCase.SignInTestcase.validatedashboardTitle(SignInTestcase.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatedashboardTitle -->
+        <test-method signature="validateUserManagement()[pri:3, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:45:58 IST" name="validateUserManagement" finished-at="2022-09-25T14:46:00 IST" duration-ms="2112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserManagement -->
+        <test-method signature="validateAction()[pri:4, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:46:00 IST" name="validateAction" finished-at="2022-09-25T14:46:12 IST" duration-ms="12050" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-wrapper admin"]/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[6]/div/div/button/img"}
+  (Session info: MicrosoftEdge=105.0.1343.50)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MUKESHKUMAR-6Y8', ip: '192.168.29.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cf4683f06b123ee8ccb72771e838d991, findElement {using=xpath, value=//*[@id="main-wrapper admin"]/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[6]/div/div/button/img}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.50, ms:edgeOptions: {debuggerAddress: localhost:56395}, msedge: {msedgedriverVersion: 105.0.1343.50 (1aa39c6858bf..., userDataDir: C:\Users\KUMAR~1.MUK\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56395/devtoo..., se:cdpVersion: 105.0.1343.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4683f06b123ee8ccb72771e838d991]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-wrapper admin"]/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[6]/div/div/button/img"}
+  (Session info: MicrosoftEdge=105.0.1343.50)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MUKESHKUMAR-6Y8', ip: '192.168.29.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cf4683f06b123ee8ccb72771e838d991, findElement {using=xpath, value=//*[@id="main-wrapper admin"]/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[6]/div/div/button/img}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.50, ms:edgeOptions: {debuggerAddress: localhost:56395}, msedge: {msedgedriverVersion: 105.0.1343.50 (1aa39c6858bf..., userDataDir: C:\Users\KUMAR~1.MUK\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56395/devtoo..., se:cdpVersion: 105.0.1343.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4683f06b123ee8ccb72771e838d991
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at com.org.pageobject.UsermanagementPage.getAction(UsermanagementPage.java:51)
+at com.org.testCase.SignInTestcase.validateAction(SignInTestcase.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAction -->
+        <test-method signature="validtateInactiveActive()[pri:5, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:46:12 IST" name="validtateInactiveActive" finished-at="2022-09-25T14:46:22 IST" duration-ms="10027" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-wrapper admin"]/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[6]/div/div/button/img"}
+  (Session info: MicrosoftEdge=105.0.1343.50)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MUKESHKUMAR-6Y8', ip: '192.168.29.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cf4683f06b123ee8ccb72771e838d991, findElement {using=xpath, value=//*[@id="main-wrapper admin"]/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[6]/div/div/button/img}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.50, ms:edgeOptions: {debuggerAddress: localhost:56395}, msedge: {msedgedriverVersion: 105.0.1343.50 (1aa39c6858bf..., userDataDir: C:\Users\KUMAR~1.MUK\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56395/devtoo..., se:cdpVersion: 105.0.1343.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4683f06b123ee8ccb72771e838d991]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-wrapper admin"]/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[6]/div/div/button/img"}
+  (Session info: MicrosoftEdge=105.0.1343.50)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MUKESHKUMAR-6Y8', ip: '192.168.29.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cf4683f06b123ee8ccb72771e838d991, findElement {using=xpath, value=//*[@id="main-wrapper admin"]/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[6]/div/div/button/img}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.50, ms:edgeOptions: {debuggerAddress: localhost:56395}, msedge: {msedgedriverVersion: 105.0.1343.50 (1aa39c6858bf..., userDataDir: C:\Users\KUMAR~1.MUK\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56395/devtoo..., se:cdpVersion: 105.0.1343.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4683f06b123ee8ccb72771e838d991
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at com.org.pageobject.UsermanagementPage.getAction(UsermanagementPage.java:51)
+at com.org.testCase.SignInTestcase.validtateInactiveActive(SignInTestcase.java:102)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validtateInactiveActive -->
+        <test-method signature="validateExportCsv()[pri:7, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:46:22 IST" name="validateExportCsv" finished-at="2022-09-25T14:46:24 IST" duration-ms="2160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateExportCsv -->
+        <test-method signature="validateBulkinvite()[pri:8, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:46:24 IST" name="validateBulkinvite" finished-at="2022-09-25T14:46:29 IST" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBulkinvite -->
+        <test-method is-config="true" signature="saveReport()[pri:0, instance:com.org.testCase.SignInTestcase@4b013c76]" started-at="2022-09-25T14:46:29 IST" name="saveReport" finished-at="2022-09-25T14:46:29 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveReport -->
+      </class> <!-- com.org.testCase.SignInTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
